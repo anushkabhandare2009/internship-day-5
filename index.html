@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Display Properties</title>
+
+    <style>
+        /* Common box style */
+        .box{
+            background-color: lightblue;
+            border: 2px solid blue;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        /* BLOCK */
+        .block-box{
+            display: block;
+        }
+
+        /* INLINE */
+        .inline-box{
+            display: inline;
+            background-color: lightgreen;
+        }
+
+        /* INLINE-BLOCK */
+        .inline-block-box{
+            display: inline-block;
+            width: 150px;
+            height: 80px;
+            background-color: lightcoral;
+        }
+
+        /* NONE */
+        .none-box{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Display Properties Example</h1>
+
+    <!-- BLOCK -->
+    <h2>1. display: block</h2>
+    <div class="box block-box">
+        This is BLOCK element 1
+    </div>
+
+    <div class="box block-box">
+        This is BLOCK element 2
+    </div>
+
+    <p>
+        Block elements take full width and start from a new line.
+    </p>
+
+    <hr>
+
+    <!-- INLINE -->
+    <h2>2. display: inline</h2>
+
+    <span class="box inline-box">Inline 1</span>
+    <span class="box inline-box">Inline 2</span>
+    <span class="box inline-box">Inline 3</span>
+
+    <p>
+        Inline elements stay in the same line and only take required width.
+    </p>
+
+    <hr>
+
+    <!-- INLINE-BLOCK -->
+    <h2>3. display: inline-block</h2>
+
+    <div class="box inline-block-box">
+        Box 1
+    </div>
+
+    <div class="box inline-block-box">
+        Box 2
+    </div>
+
+    <div class="box inline-block-box">
+        Box 3
+    </div>
+
+    <p>
+        Inline-block elements stay in one line like inline,
+        but width and height can be applied like block.
+    </p>
+
+    <hr>
+
+    <!-- NONE -->
+    <h2>4. display: none</h2>
+
+    <div class="box none-box">
+        You cannot see this box because display is none.
+    </div>
+
+    <p>
+        The hidden element is completely removed from the webpage.
+    </p>
+     <!-- FLEX -->
+    <h2>5. display: flex</h2>
+
+    <div class="flex-container">
+
+        <div class="flex-item">Item 1</div>
+
+        <div class="flex-item">Item 2</div>
+
+        <div class="flex-item">Item 3</div>
+
+    </div>
+
+    <p>
+        Flexbox arranges items in a row or column easily.
+    </p>
+
+</body>
+</html>
